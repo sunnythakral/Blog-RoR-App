@@ -1,28 +1,33 @@
-== README
+This a blog application built on rails framework.
+Currently still under development.
+Need to resolve issues with the devise gem
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails version : 4.2.4
 
-Things you may want to cover:
+Ruby version : 2.2.3
 
-* Ruby version
+Running instructions
 
-* System dependencies
+create a working directory and cd into it
 
-* Configuration
+use the following command to clone this project into your working directory:
 
-* Database creation
+git clone <url of this page>
 
-* Database initialization
+cd into the project folder created by the git clone command
 
-* How to run the test suite
+perform the following commands in your CLI
 
-* Services (job queues, cache servers, search engines, etc.)
+bundle install
 
-* Deployment instructions
+rake db:setup
 
-* ...
+rake db: migrate
 
+The commands with install the required gems in the Gemfile, create and initialize our database according to the model schema in our rails app.
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+start the rails server with the following command
+
+rails s
+
+This will run the server and now we can go to localhost:3000/ on our web browser to view our application's web page.
